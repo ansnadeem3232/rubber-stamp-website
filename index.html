@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naeem Rubber Stamps</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#141E30,#243B55);
+color:white;
+scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,0.6);
+padding:15px;
+display:flex;
+justify-content:center;
+align-items:center;
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 20px;
+font-weight:500;
+}
+
+nav a:hover{
+color:#60a5fa;
+}
+
+/* MOBILE MENU */
+
+.menu-btn{
+display:none;
+font-size:26px;
+cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero img{
+width:320px;
+margin-bottom:30px;
+}
+
+.hero p{
+max-width:700px;
+line-height:1.6;
+opacity:0.9;
+}
+
+/* SECTIONS */
+
+section{
+padding:100px 10%;
+text-align:center;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:40px;
+margin-top:50px;
+}
+
+.image-box{
+position:relative;
+overflow:hidden;
+border-radius:15px;
+cursor:pointer;
+}
+
+.image-box img{
+width:100%;
+height:250px;
+object-fit:cover;
+transition:0.5s;
+}
+
+.image-box:hover img{
+transform:scale(1.08);
+}
+
+.overlay{
+position:absolute;
+bottom:0;
+width:100%;
+background:rgba(0,0,0,0.6);
+text-align:center;
+padding:10px;
+font-size:18px;
+}
+
+/* MAP */
+
+.map{
+margin-top:40px;
+border-radius:15px;
+overflow:hidden;
+}
+
+/* BUTTON */
+
+.location-btn{
+display:inline-block;
+background:#3b82f6;
+color:white;
+padding:12px 25px;
+border-radius:25px;
+text-decoration:none;
+margin-top:20px;
+}
+
+.contact button{
+background:#3b82f6;
+border:none;
+color:white;
+padding:12px 25px;
+margin:10px;
+border-radius:20px;
+cursor:pointer;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:black;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:18px;
+border-radius:50%;
+text-decoration:none;
+font-size:20px;
+}
+
+/* IMAGE VIEWER */
+
+.viewer{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:black;
+display:none;
+justify-content:center;
+align-items:center;
+z-index:2000;
+}
+
+.viewer img{
+max-width:90%;
+max-height:90%;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<a href="#home">Home</a>
+<a href="#categories">Categories</a>
+<a href="#location">Location</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<img src="images/logo.png" alt="Logo">
+
+<h1>Naeem Rubber Stamps</h1>
+
+<p>
+Premium quality custom rubber stamps and official seals crafted with precision and care.
+With more than 25 years of trusted experience in Dhule, Naeem Rubber Stamps provides
+durable, clear, and professional stamping solutions for offices, businesses, schools,
+and personal use.
+</p>
+
+</section>
+
+<!-- CATEGORIES -->
+
+<section id="categories">
+
+<h2>Our Stamp Categories</h2>
+
+<div class="grid">
+
+<div class="image-box">
+<img src="images/crystal-body.png">
+<div class="overlay">Crystal Model</div>
+</div>
+
+<div class="image-box">
+<img src="images/pre-ink-stamp.jpeg">
+<div class="overlay">Pre Ink Stamp</div>
+</div>
+
+<div class="image-box">
+<img src="images/self-ink-stamp.png">
+<div class="overlay">Self Ink Stamp</div>
+</div>
+
+<div class="image-box">
+<img src="images/round-seal.png">
+<div class="overlay">Round Seal</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- LOCATION -->
+
+<section id="location">
+
+<h2>Find Our Shop</h2>
+
+<a href="https://share.google/fsmyXPWC5N2JG8NN1" target="_blank" class="location-btn">
+📍 Open Location
+</a>
+
+<div class="map">
+
+<iframe
+src="https://maps.google.com/maps?q=dhule&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="350"
+style="border:0;"
+loading="lazy">
+</iframe>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+<h2>Contact Us</h2>
+
+<a href="https://wa.me/919028262324" target="_blank">
+<button>WhatsApp</button>
+</a>
+
+<a href="mailto:rubberstampdhule@gmail.com">
+<button>Email</button>
+</a>
+
+</section>
+
+<footer>
+© 2026 Naeem Rubber Stamps
+</footer>
+
+<a href="https://wa.me/919028262324" class="whatsapp">💬</a>
+
+<!-- IMAGE VIEWER -->
+
+<div class="viewer" id="viewer">
+<img id="viewer-img">
+</div>
+
+<script>
+
+/* image viewer */
+
+const images=document.querySelectorAll(".image-box img");
+const viewer=document.getElementById("viewer");
+const viewerImg=document.getElementById("viewer-img");
+
+images.forEach(img=>{
+img.onclick=function(){
+viewer.style.display="flex";
+viewerImg.src=this.src;
+}
+});
+
+viewer.onclick=function(){
+viewer.style.display="none";
+}
+
+</script>
+
+</body>
+</html>
